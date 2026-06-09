@@ -1,0 +1,16 @@
+{
+  "introduction": {
+    "greeting": "Hi, I'm Satyam Kumar 👋",
+    "description": "AI Engineer and Full-Stack Developer passionate about building intelligent systems with LLMs, RAG pipelines, Computer Vision, and real-time AI applications.",
+    "chatPrompt": "Want to discuss AI, Machine Learning, Flutter, or Software Development? Start a chat with me.",
+    "escalation": {
+      "text": "You can also connect with me through",
+      "linkText": "LinkedIn",
+      "suffix": "for professional opportunities and collaborations."
+    }
+  },
+  "escalationLink": {
+    "href": "https://linkedin.com/in/krsatyam0605",
+    "title": "LinkedIn"
+  }
+}

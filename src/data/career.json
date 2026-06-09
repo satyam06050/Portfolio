@@ -1,0 +1,38 @@
+{
+  "career": [
+    {
+      "name": "Appsy Infotech",
+      "href": "#",
+      "logo": "/img/company.png",
+      "positions": [
+        {
+          "title": "Software Development Intern",
+          "start": "Oct 2025",
+          "end": "Dec 2025",
+          "description": [
+            "Developed 10+ RESTful APIs using Python and MySQL for authentication, user management, and real-time features.",
+            "Implemented repository and service-layer architecture, improving maintainability and scalability.",
+            "Collaborated with cross-functional teams using Git workflows and participated in code reviews."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ignito Corporation",
+      "href": "#",
+      "logo": "/img/company.png",
+      "positions": [
+        {
+          "title": "Flutter Development Intern",
+          "start": "Mar 2025",
+          "end": "Oct 2025",
+          "description": [
+            "Built 15+ reusable Flutter widgets and optimized API caching, reducing screen load time by 56%.",
+            "Integrated REST APIs with JWT authentication and implemented persistent session management.",
+            "Refactored legacy state management into a modular architecture using Provider/GetX and repository pattern."
+          ]
+        }
+      ]
+    }
+  ]
+}

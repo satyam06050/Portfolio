@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "name": "AI Interview Platform",
+      "description": "A full-stack voice-based AI mock interview system that conducts real-time contextual interviews using Gemini Flash, Groq, and Whisper, with adaptive follow-up questions and personalized interview flows.",
+      "image": "/img/ai-interview-platform.png",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "Gemini",
+        "Groq",
+        "Whisper",
+        "RAG",
+        "WebSockets",
+        "Next.js",
+        "TailwindCSS",
+        "LLM"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/satyam06050/AI-Interview-Platform",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Neuro-Nav-AI",
+      "description": "An AI-powered assistive navigation system for visually impaired users that combines YOLOv8 object detection, TensorFlow Lite, Arduino sensors, and voice guidance to provide real-time offline navigation.",
+      "image": "/img/neuro-nav-ai.png",
+      "tags": [
+        "Flutter",
+        "Python",
+        "YOLOv8",
+        "TensorFlow Lite",
+        "Computer Vision",
+        "Arduino",
+        "Embedded Systems",
+        "AI",
+        "Mobile Development"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/satyam06050/Neuro-Nav-AI",
+          "icon": "github"
+        }
+      ]
+    }
+  ]
+}
