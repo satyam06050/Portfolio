@@ -1,44 +1,50 @@
 {
-"education": [
-{
-"name": "Kalinga Institute of Industrial Technology (KIIT)",
-"href": "https://kiit.ac.in",
-"logo": "/img/kiit.png",
-"positions": [
-{
-"title": "Bachelor of Technology (B.Tech) in Computer Science and System Engineering",
-"start": "2023",
-"end": "2027",
-"description": [
-"Currently pursuing B.Tech in Computer Science and System Engineering.",
-"Focused on Artificial Intelligence, Software Development, Flutter, Python, and Database Systems.",
-"Developing AI-powered indoor navigation and emergency evacuation solutions using graph-based pathfinding algorithms."
-],
-"links": [
-{
-"name": "NeuralNavAI",
-"href": "https://github.com/satyam06050/NeuralNavAI",
-"icon": "globe"
-}
-]
-}
-]
-},
-{
-"name": "Higher Secondary Education",
-"href": "",
-"logo": "/img/school.png",
-"positions": [
-{
-"title": "Science Stream (PCM)",
-"start": "2021",
-"end": "2023",
-"description": [
-"Studied Physics, Chemistry, and Mathematics.",
-"Built a strong foundation in analytical thinking, mathematics, and problem-solving."
-]
-}
-]
-}
-]
+  "education": [
+    {
+      "name": "Kalinga Institute of Industrial Technology (KIIT)",
+      "href": "https://kiit.ac.in",
+      "logo": "/img/kiit.png",
+      "positions": [
+        {
+          "title": "Bachelor of Technology (B.Tech) in Computer Science ",
+          "start": "2023",
+          "end": "2027",
+          "description": [
+            "CGPA: 8.6/10",
+            "Relevant Coursework: DSA, DBMS, Operating Systems, Computer Networks, Artificial Intelligence"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DAV Public School, Hehal, Ranchi",
+      "href": "",
+      "logo": "/img/school.png",
+      "positions": [
+        {
+          "title": "Higher Secondary Education (PCM)",
+          "start": "2020",
+          "end": "2022",
+          "description": [
+            "Percentage: 87.8%"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DAV Public School, Hehal, Ranchi",
+      "href": "",
+      "logo": "/img/school.png",
+      "positions": [
+        {
+          "title": "Secondary Education (Class X)",
+          "start": "2019",
+          "end": "2020",
+          "description": [
+            "Percentage: 94.4%"
+          ]
+        }
+      ]
+    }
+  ]
 }
