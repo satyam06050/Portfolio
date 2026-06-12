@@ -2,7 +2,7 @@
 "projects": [
 {
 "name": "KIIT Sync",
-"description": "A campus companion app for KIIT students featuring timetable management, attendance tracking, subject analytics, and mess menus. Used by 50+ students.",
+"description": "A campus companion app for KIIT students featuring timetables, attendance tracking, subject analytics, and mess menus. Used by 50+ students.",
 "image": "/img/kiit-sync.png",
 "tags": [
 "Flutter",
@@ -23,7 +23,7 @@
 },
 {
 "name": "AI Interview Platform",
-"description": "A full-stack voice-based AI mock interview system that conducts real-time contextual interviews using Gemini Flash, Groq, and Whisper, with adaptive follow-up questions and personalized interview flows.",
+"description": "A voice-based AI interview platform powered by Gemini, Groq, and Whisper with contextual questioning, adaptive follow-ups, and automated evaluation.",
 "image": "/img/ai-interview-platform.png",
 "tags": [
 "Python",
@@ -46,8 +46,8 @@
 ]
 },
 {
-"name": "Neuro-Nav-AI",
-"description": "An AI-powered assistive navigation system for visually impaired users that combines YOLOv8 object detection, TensorFlow Lite, Arduino sensors, and voice guidance to provide real-time offline navigation.",
+"name": "Neuro-Nav-AI(minor)",
+"description": "An AI-powered assistive navigation system for visually impaired users using YOLOv8, TensorFlow Lite, Arduino sensors, and voice-guided navigation.",
 "image": "/img/neuro-nav-ai.png",
 "tags": [
 "Flutter",
@@ -67,6 +67,52 @@
 "icon": "github"
 }
 ]
+},
+{
+"name": "FileDoc Ecosystem",
+"description": "A multi-role file sharing and monetization platform with dedicated User, Admin, and Super Admin applications built using Flutter and Firebase.",
+"image": "/img/filedoc.png",
+"tags": [
+"Flutter",
+"Firebase",
+"File Sharing",
+"Role-Based Access",
+"Admin Dashboard",
+"Monetization",
+"Analytics",
+"Cloud Storage"
+],
+"links": [
+{
+"name": "Source",
+"href": "https://github.com/satyam06050/FileDoc",
+"icon": "github"
 }
+]
+},
+{
+"name": "Legal Document Assistant",
+"description": "A LangGraph-powered legal AI assistant that answers questions from legal knowledge bases and uploaded documents using RAG, self-evaluation, and source-grounded responses.",
+"image": "/img/legal-document-assistant.png",
+"tags": [
+"LangGraph",
+"RAG",
+"Python",
+"Groq",
+"ChromaDB",
+"Streamlit",
+"LLM",
+"RAGAS",
+"AI Agents"
+],
+"links": [
+{
+"name": "Source",
+"href": "https://github.com/satyam06050/Amicus-AI",
+"icon": "github"
+}
+]
+}
+
 ]
 }
