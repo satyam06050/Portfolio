@@ -3,7 +3,7 @@
     {
       "path": "/",
       "name": "home",
-      "description": "Portfolio overview, recent projects, and blog highlights",
+      "description": "Portfolio overview and recent projects",
       "showInNav": true
     },
     {
@@ -16,7 +16,7 @@
       "path": "/blog",
       "name": "blog",
       "description": "Blog posts and project updates",
-      "showInNav": true
+      "showInNav": false
     },
     {
       "path": "/contact",

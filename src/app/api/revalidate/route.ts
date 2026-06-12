@@ -1,4 +1,4 @@
-import { revalidatePath, revalidateTag } from "next/cache";
+// import { revalidatePath, revalidateTag } from "next/cache";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
@@ -38,14 +38,15 @@ export async function POST(request: Request) {
 
   const slug = body.slug?.trim();
 
+  // Blog/TACOS integration is paused for now.
   // Always refresh the blog list because titles/summaries/tags can change.
-  revalidateTag("posts");
-  revalidatePath("/blog");
-
-  if (slug) {
-    revalidateTag(`post:${slug}`);
-    revalidatePath(`/blog/${slug}`);
-  }
+  // revalidateTag("posts");
+  // revalidatePath("/blog");
+  //
+  // if (slug) {
+  //   revalidateTag(`post:${slug}`);
+  //   revalidatePath(`/blog/${slug}`);
+  // }
 
   return NextResponse.json({
     revalidated: true,

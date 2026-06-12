@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import BlogImage from "@/components/BlogImage";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import MDXContent from "@/components/MDXContent";
 import ViewCounter from "@/components/ViewCounter";
 import { Badge } from "@/components/ui/Badge";
 import { Separator } from "@/components/ui/Separator";
-import { getPostBySlug, getPosts } from "@/lib/posts";
+import { getPostBySlug, getPosts, type PostDetail } from "@/lib/posts";
 import { formatDate } from "@/lib/utils";
 import {
   AlertTriangleIcon,
@@ -20,10 +21,13 @@ import { notFound } from "next/navigation";
 export const revalidate = 600;
 
 export async function generateStaticParams() {
-  const posts = await getPosts(10);
-  const slugs = posts.map((post) => ({ slug: post.slug }));
+  // Blog/TACOS integration is paused for now.
+  return [];
 
-  return slugs;
+  // const posts = await getPosts(10);
+  // const slugs = posts.map((post) => ({ slug: post.slug }));
+  //
+  // return slugs;
 }
 
 export async function generateMetadata({
@@ -31,29 +35,37 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }) {
-  const { slug } = params;
-  const post = await getPostBySlug(slug);
-
-  if (!post) {
-    return {
-      title: "Post Not Found",
-    };
-  }
-
+  // Blog/TACOS integration is paused for now.
   return {
-    title: post.title,
-    description: post.summary,
-    openGraph: {
-      title: post.title,
-      description: post.summary,
-      images: post.image ? [{ url: post.image }] : [],
-    },
+    title: "Post Not Found",
   };
+
+  // const { slug } = params;
+  // const post = await getPostBySlug(slug);
+  //
+  // if (!post) {
+  //   return {
+  //     title: "Post Not Found",
+  //   };
+  // }
+  //
+  // return {
+  //   title: post.title,
+  //   description: post.summary,
+  //   openGraph: {
+  //     title: post.title,
+  //     description: post.summary,
+  //     images: post.image ? [{ url: post.image }] : [],
+  //   },
+  // };
 }
 
 export default async function Post({ params }: { params: { slug: string } }) {
+  // Blog/TACOS integration is paused for now.
+  notFound();
+
   const { slug } = params;
-  const post = await getPostBySlug(slug);
+  const post = (await getPostBySlug(slug)) as PostDetail;
 
   if (!post) {
     notFound();
@@ -72,13 +84,14 @@ export default async function Post({ params }: { params: { slug: string } }) {
     views,
   } = post;
 
-  const initialViewCount = typeof views === "number" ? views : 0;
+  const initialViewCount = Number(views ?? 0);
+  const postCoAuthors = coAuthors ?? [];
 
   const shouldShowUpdated =
     updatedAt &&
     updatedAt !== publishedAt &&
-    new Date(updatedAt).getTime() >
-      new Date(publishedAt || updatedAt).getTime();
+    new Date(updatedAt as string).getTime() >
+      new Date((publishedAt || updatedAt) as string).getTime();
 
   return (
     <div className="min-h-screen bg-background">
@@ -112,7 +125,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         )}
 
         {/* Featured Image */}
-        {image && <BlogImage src={image} alt={title || ""} />}
+        {image && <BlogImage src={image as string} alt={title || ""} />}
 
         {/* Header */}
         <header className="mb-16">
@@ -168,7 +181,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                     />
                     <div className="flex items-center gap-1.5">
                       <Edit3Icon className="h-4 w-4" />
-                      <span>Updated {formatDate(updatedAt)}</span>
+                      <span>Updated {formatDate(updatedAt ?? "")}</span>
                     </div>
                   </>
                 )}
@@ -190,13 +203,13 @@ export default async function Post({ params }: { params: { slug: string } }) {
               )}
 
               {/* Co-authors */}
-              {coAuthors && coAuthors.length > 0 && (
+              {postCoAuthors.length > 0 && (
                 <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
                   <UsersIcon className="h-4 w-4" />
                   <span>
                     Co-authored with{" "}
                     <span className="font-semibold text-foreground">
-                      {coAuthors.join(", ")}
+                      {postCoAuthors.join(", ")}
                     </span>
                   </span>
                 </div>
@@ -238,7 +251,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                         <div className="flex items-center gap-1.5">
                           <Edit3Icon className="h-3.5 w-3.5" />
                           <span className="font-medium">
-                            Updated {formatDate(updatedAt)}
+                            Updated {formatDate(updatedAt ?? "")}
                           </span>
                         </div>
                       </>
