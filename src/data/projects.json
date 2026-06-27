@@ -1,72 +1,66 @@
 {
 "projects": [
 {
-"name": "KIIT Sync",
-"description": "A campus companion app for KIIT students featuring timetables, attendance tracking, subject analytics, and mess menus. Used by 50+ students.",
-"image": "/img/kiit-sync.png",
-"tags": [
-"Flutter",
-"Firebase",
-"Hive",
-"Dart",
-"Mobile Development",
-"Attendance Tracking",
-"Timetable Management"
-],
-"links": [
-{
-"name": "Source",
-"href": "https://github.com/satyam06050/KIIT-sync/tree/main",
-"icon": "github"
-}
-]
+  "name": "KIIT Sync",
+  "description": "All-in-one campus app for KIIT students with timetables, attendance, analytics, and mess menus. Used by 80+ students.",
+  "image": "/img/kiit-sync.png",
+  "tags": [
+    "Flutter",
+    "Dart",
+    "Supabase",
+    "Hive",
+    "GetX"
+    
+  ],
+  "links": [
+    {
+      "name": "Source",
+      "href": "https://github.com/satyam06050/KIIT-sync/tree/main",
+      "icon": "github"
+    }
+  ]
 },
 {
-"name": "AI Interview Platform",
-"description": "A voice-based AI interview platform powered by Gemini, Groq, and Whisper with contextual questioning, adaptive follow-ups, and automated evaluation.",
-"image": "/img/ai-interview-platform.png",
-"tags": [
-"Python",
-"FastAPI",
-"Gemini",
-"Groq",
-"Whisper",
-"RAG",
-"WebSockets",
-"Next.js",
-"TailwindCSS",
-"LLM"
-],
-"links": [
-{
-"name": "Source",
-"href": "https://github.com/satyam06050/AI-Interview-Platform",
-"icon": "github"
-}
-]
+  "name": "AI Interview Platform",
+  "description": "AI-powered mock interview platform with real-time voice interviews, adaptive questioning, and instant performance feedback.",
+  "image": "/img/ai-interview-platform.png",
+  "tags": [
+    "Python",
+    "Flask",
+    "Next.js",
+    "Tailwind CSS",
+    "LiveKit",
+    "Deepgram Nova",
+    "Cartesia",
+    "Silero"
+  ],
+  "links": [
+    {
+      "name": "Source",
+      "href": "https://github.com/satyam06050/AI-Interview-Platform",
+      "icon": "github"
+    }
+  ]
 },
 {
-"name": "Neuro-Nav-AI(minor)",
-"description": "An AI-powered assistive navigation system for visually impaired users using YOLOv8, TensorFlow Lite, Arduino sensors, and voice-guided navigation.",
-"image": "/img/neuro-nav-ai.png",
-"tags": [
-"Flutter",
-"Python",
-"YOLOv8",
-"TensorFlow Lite",
-"Computer Vision",
-"Arduino",
-"Embedded Systems",
-"AI",
-"Mobile Development"
-],
-"links": [
-{
-"name": "Source",
-"href": "https://github.com/satyam06050/Neuro-Nav-AI",
-"icon": "github"
-}
-]
+  "name": "Neuro-Nav-AI",
+  "description": "AI-powered assistive navigation system for visually impaired users with real-time obstacle detection and voice-guided navigation.",
+  "image": "/img/neuro-nav-ai.png",
+  "tags": [
+    "Flutter",
+    "Python",
+    "YOLOv8",
+    "TensorFlow Lite",
+    "Computer Vision",
+    "Arduino"
+  ],
+  "links": [
+    {
+      "name": "Source",
+      "href": "https://github.com/satyam06050/Neuro-Nav-AI",
+      "icon": "github"
+    }
+  ]
 },
 {
 "name": "FileDoc Ecosystem",
@@ -91,27 +85,25 @@
 ]
 },
 {
-"name": "Legal Document Assistant",
-"description": "A LangGraph-powered legal AI assistant that answers questions from legal knowledge bases and uploaded documents using RAG, self-evaluation, and source-grounded responses.",
-"image": "/img/legal-document-assistant.png",
-"tags": [
-"LangGraph",
-"RAG",
-"Python",
-"Groq",
-"ChromaDB",
-"Streamlit",
-"LLM",
-"RAGAS",
-"AI Agents"
-],
-"links": [
-{
-"name": "Source",
-"href": "https://github.com/satyam06050/Amicus-AI",
-"icon": "github"
-}
-]
+  "name": "Legal Document Assistant",
+  "description": "LangGraph-powered legal AI assistant that answers questions from legal documents using RAG, AI agents, and source-grounded responses.",
+  "image": "/img/legal-document-assistant.png",
+  "tags": [
+    "Python",
+    "LangGraph",
+    "RAG",
+    "ChromaDB",
+    "Groq",
+    "Streamlit",
+    "AI Agents"
+  ],
+  "links": [
+    {
+      "name": "Source",
+      "href": "https://github.com/satyam06050/Amicus-AI",
+      "icon": "github"
+    }
+  ]
 }
 
 ]

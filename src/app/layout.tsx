@@ -19,6 +19,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "Satyam",
+  metadataBase: new URL("https://krsatyam.vercel.app"),
   description: "My personal site to showcase my developer work and opinions.",
   icons: {
     icon: [
