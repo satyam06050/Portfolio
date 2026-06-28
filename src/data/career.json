@@ -1,18 +1,17 @@
 {
   "career": [
     {
-      "name": "Appsy Infotech",
+      "name": "Appsly Infotech",
       "href": "#",
-      "logo": "/img/company.png",
+      "logo": "/img/appsly.png",
       "positions": [
         {
           "title": "Software Development Intern",
           "start": "Oct 2025",
           "end": "Dec 2025",
           "description": [
-            "Developed 10+ RESTful APIs using Python and MySQL for authentication, user management, and real-time features.",
-            "Implemented repository and service-layer architecture, improving maintainability and scalability.",
-            "Collaborated with cross-functional teams using Git workflows and participated in code reviews."
+            "Developed 10+ RESTful APIs using FastAPI and MySQL, redesigned and optimized the database schema, and reduced API latency through query optimization.",
+            "Led a 4-member engineering team in developing Flutter applications and backend services, managing Git workflows, pull requests, and code reviews."
           ]
         }
       ]
@@ -20,16 +19,16 @@
     {
       "name": "Ignito Corporation",
       "href": "#",
-      "logo": "/img/company.png",
+      "logo": "/img/ignito.png",
       "positions": [
         {
           "title": "Flutter Development Intern",
           "start": "Mar 2025",
           "end": "Oct 2025",
           "description": [
-            "Built 15+ reusable Flutter widgets and optimized API caching, reducing screen load time by 56%.",
-            "Integrated REST APIs with JWT authentication and implemented persistent session management.",
-            "Refactored legacy state management into a modular architecture using Provider/GetX and repository pattern."
+            "Developed pixel-perfect, responsive Flutter interfaces for 10+ applications using reusable widgets, Clean Architecture, and GetX state management.",
+            "Optimized API caching and state management, reducing screen load time from 3.2s to 1.4s (56% improvement).",
+            "Refactored the application into a feature-based modular architecture, improving maintainability, scalability, and developer productivity."
           ]
         }
       ]
