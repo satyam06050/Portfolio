@@ -104,6 +104,25 @@
       "icon": "github"
     }
   ]
+},{
+  "name": "KIIT SafeRoute",
+  "description": "A Google Maps-style indoor navigation system for KIIT featuring A* pathfinding, multi-floor routing, and emergency evacuation navigation.",
+  "image": "/img/kiit-saferoute.png",
+  "tags": [
+    "Flutter",
+    "A* Pathfinding",
+    "GetX",
+    "Indoor Navigation",
+    "Algorithms",
+    "Emergency Routing"
+  ],
+  "links": [
+    {
+      "name": "Source",
+      "href": "https://github.com/satyam06050/KIIT-Saferoute",
+      "icon": "github"
+    }
+  ]
 }
 
 ]
