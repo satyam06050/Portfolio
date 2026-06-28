@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import GitHubActivity from "@/components/GitHubActivity";
 import LinkWithIcon from "@/components/LinkWithIcon";
 // import Posts from "@/components/Posts";
 // import PostsSkeleton from "@/components/PostsSkeleton";
@@ -83,6 +84,8 @@ export default function Home() {
           </section>
         </div>
       </section>
+
+      <GitHubActivity />
 
       <Experience />
 
