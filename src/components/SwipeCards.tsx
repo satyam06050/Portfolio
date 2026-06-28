@@ -21,20 +21,22 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
   return (
     <div
       className={cn(
-        "relative grid h-[233px] w-[175px] place-items-center",
-        className,
+         "relative grid h-[220px] w-[220px] place-items-center -translate-y-12",
+        className
       )}
     >
       {cards.length === 0 && (
         <div style={{ gridRow: 1, gridColumn: 1 }} className="z-20">
-          <Button onClick={resetCards} variant={"outline"}>
+          <Button onClick={resetCards} variant="outline">
             <RefreshCw className="size-4" />
             Again
           </Button>
         </div>
       )}
+
       {cards.map((card, index) => {
         const depth = cards.length - 1 - index;
+
         return (
           <Card
             key={card.id}
@@ -70,27 +72,28 @@ const Card = ({
   const isFront = id === cards[cards.length - 1]?.id;
 
   const rotate = useTransform(() => {
-    const offset = isFront ? 0 : id % 2 ? 6 : -6;
+    const offset = isFront ? 0 : id % 2 ? 5 : -5;
     return `${rotateRaw.get() + offset}deg`;
   });
 
-  const handleDragEnd = (event: any, info: { offset: { x: number } }) => {
-    if (Math.abs(info.offset.x) > 100) {
-      // If swiped far enough, remove the card
+  const handleDragEnd = (
+    event: any,
+    info: { offset: { x: number } }
+  ) => {
+    if (Math.abs(info.offset.x) > 90) {
       setCards((pv) => pv.filter((v) => v.id !== id));
     } else {
-      // Otherwise, animate the card back to the center
       animate(x, 0, {
         type: "spring",
-        stiffness: 400,
-        damping: 40,
+        stiffness: 450,
+        damping: 35,
       });
     }
   };
 
   return (
     <motion.div
-      className="absolute h-[233px] w-[175px] origin-bottom overflow-hidden rounded-lg bg-white hover:cursor-grab active:cursor-grabbing"
+      className="absolute h-[220px] w-[220px] overflow-hidden rounded-full bg-white hover:cursor-grab active:cursor-grabbing"
       style={{
         gridRow: 1,
         gridColumn: 1,
@@ -98,17 +101,16 @@ const Card = ({
         opacity,
         rotate,
         boxShadow: isFront
-          ? "0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3)"
-          : undefined,
+          ? "0 18px 35px rgba(0,0,0,.22)"
+          : "0 8px 18px rgba(0,0,0,.12)",
       }}
       animate={{
-        // Ensure the top card is always the largest paint candidate.
-        scale: isFront ? 1 : Math.max(0.85, 0.94 - depth * 0.04),
+        scale: isFront ? 1 : Math.max(0.88, 0.95 - depth * 0.03),
       }}
       drag={isFront ? "x" : false}
       dragConstraints={{
-        left: -150,
-        right: 150,
+        left: -130,
+        right: 130,
         top: 0,
         bottom: 0,
       }}
@@ -117,14 +119,14 @@ const Card = ({
       {isFront ? (
         <ImageWithSkeleton
           src={url}
-          alt="Photo of Ted"
-          width={175}
-          height={233}
-          sizes="175px"
-          quality={75}
+          alt="Profile"
+          width={220}
+          height={220}
+          sizes="220px"
+          quality={85}
           draggable={false}
           containerClassName="h-full w-full pointer-events-none"
-          className="h-full w-full select-none object-cover"
+          className="h-full w-full object-cover select-none"
           fetchPriority="high"
           priority
         />
@@ -132,13 +134,13 @@ const Card = ({
         <ImageWithSkeleton
           src={url}
           alt=""
-          width={175}
-          height={233}
-          sizes="175px"
-          quality={70}
+          width={220}
+          height={220}
+          sizes="220px"
+          quality={75}
           draggable={false}
           containerClassName="h-full w-full pointer-events-none"
-          className="h-full w-full select-none object-cover"
+          className="h-full w-full object-cover select-none"
           fetchPriority="low"
           loading="lazy"
         />
