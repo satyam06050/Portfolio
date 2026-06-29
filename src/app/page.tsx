@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 import Socials from "@/components/Socials";
 import SwipeCards from "@/components/SwipeCards";
 import { Button } from "@/components/ui/Button";
+import TechStack from "@/components/TechStack";
 // import { getPosts } from "@/lib/posts";
 import {
   ArrowDown,
@@ -84,7 +85,7 @@ export default function Home() {
           </section>
         </div>
       </section>
-
+      <TechStack />
       <GitHubActivity />
 
       <Experience />
