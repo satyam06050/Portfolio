@@ -1,16 +1,24 @@
 "use client";
 
-import { GitHubCalendar } from "react-github-calendar";
+import dynamic from "next/dynamic";
+
+const GitHubCalendar = dynamic(
+  () =>
+    import("react-github-calendar").then((mod) => ({
+      default: mod.GitHubCalendar,
+    })),
+  {
+    ssr: false,
+  }
+);
 
 export default function GitHubActivity() {
   return (
     <section className="flex flex-col gap-6">
       <div className="flex flex-col gap-2">
         <h2 className="title text-2xl sm:text-3xl">
-          GitHub Activity log
+          GitHub Activity Log
         </h2>
-
-    
       </div>
 
       <div className="overflow-x-auto rounded-xl border border-border/70 bg-background/70 p-4 shadow-sm sm:p-6">
