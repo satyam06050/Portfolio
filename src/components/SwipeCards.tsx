@@ -171,6 +171,6 @@ const cardData: Card[] = [
   },
   {
     id: 4,
-    url: "/img/satyam_1.jpg",
+    url: "/img/satyam_2.jpg",
   },
 ];
