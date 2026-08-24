@@ -25,6 +25,12 @@
       "showInNav": true
     },
     {
+      "path": "/hackathons",
+      "name": "hackathons",
+      "description": "Hackathon projects and achievements",
+      "showInNav": true
+    },
+    {
       "path": "/privacy",
       "name": "privacy",
       "description": "Privacy policy",

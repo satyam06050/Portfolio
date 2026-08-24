@@ -1,0 +1,64 @@
+[
+  {
+    "title": "Multi-Modal Evidence Review",
+    "hackathon": "HackerRank Orchestrate AI Hackathon",
+    "description": "Engineered a multimodal claim adjudication pipeline integrating vision-language reasoning, contextual inference, and evidence-grounded validation for autonomous damage assessment.",
+    "image": "/img/hackerrankJune.png",
+    "date": "June 2026",
+    "tags": [
+      
+      "Multimodal Reasoning", "Evidence Grounding",
+     
+      "Contextual Inference",
+      "Agentic Validation"
+    ],
+    "links": [
+      {
+        "name": "GitHub",
+        "href": "https://github.com/satyam06050/hackerrank-orchestrate-june26",
+        "icon": "github"
+      }
+    ]
+  },
+  {
+  "title": "Capture the Flag (CTF)",
+  "hackathon": "RoboNexus World Championship",
+  "description": "Leading Team Karn in developing autonomous robotics strategies for the CTF track at KFUPM's international robotics championship.",
+  "image": "/img/robonexus.png",
+  "date": "2026",
+  "tags": [
+    "Multi-Agent Systems",
+    "Autonomous Robotics",
+    "Distributed Intelligence",
+    "Strategic Path Planning",
+    "Embedded Systems"
+  ],
+  "links": [
+    {
+      "name": "Competition",
+      "href": "https://www.robonexus.org/",
+      "icon": "globe"
+    }
+  ]
+},{
+  "title": "AI Support Ticket Triage",
+  "hackathon": "HackerRank Orchestrate",
+  "description": "Engineered an agentic support triage system leveraging contextual reasoning, semantic retrieval, and autonomous workflow orchestration across multiple product ecosystems.",
+  "image": "/img/hackerrankMay.png",
+  "date": "May 2026",
+  "tags": [
+    "Agentic AI",
+    "Semantic Retrieval",
+    "Contextual Reasoning",
+    "Workflow Orchestration",
+    "Autonomous Triage"
+  ],
+  "links": [
+    {
+      "name": "GitHub",
+      "href": "https://github.com/satyam06050/hackerrank-orchestrate-may26",
+      "icon": "github"
+    }
+  ]
+}
+]
